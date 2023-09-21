@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <!--Concat() Method with button-->
+        <p id="Concatenate"></p>
+        <button onclick="full_Sentence()">Click here for a sentence</button>
+    
+        <!--Slice() Method with button-->
+        <p id="Slice"></p>
+        <button onclick="slice_Method()">Click here!</button>
+
+        <!--text.toUpperCase() Method with button-->
+        <p id="demo">Hello World!</p>
+        <button onclick="myFunction()">Try me!</button>
+
+        <!--Search() method-->
+        <p>The search() method returns the position of the first occurence of a string in a string.</p>
+        <p>The position of the first occurence of "locate" is: </p>
+        <p id="demo2"></p>
+        <script>
+            let text5 = "Please locate where 'locate' occurs!"
+            let position = text5.search("locate");
+            document.getElementById("demo2").innerHTML = position;
+        </script>
+        
+        <!--toString() method with button-->
+        <p id="Numbers_to_string"></p>
+        <button onclick="string_Method()">Click here</button>
+
+        <!--toPrecision() method-->
+        <p id="Precision"></p>
+        <button onclick="precision_Method()">Click here</button>
+
+        <!--toFixed() method-->
+        <p>toFixed() converts a number to a string, rounded to a specific number of decimals:</p>
+        <p id="demo3"></p>
+        <script>
+            let num = 5.56789;
+            let n = num.toFixed();
+            document.getElementById("demo3").innerHTML = n;
+        </script>
+
+        <!--ValueOf() method-->
+        <p>valueOf() returns the primitive value of a string</p>
+        <p id="demo4"></p>
+        <script>
+            let text2 = "Hello World!";
+            let result = text2.valueOf();
+            document.getElementById("demo4").innerHTML = result;
+        </script>
+    
+    </body>
+</html>
