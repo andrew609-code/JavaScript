@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <title>One page website Lightbox</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/opwlightbox.css"/>
+</head>
+<body>
+    <div>
+		<div>
+			<ul>
+				<a href="#home" id="link"><li>HOME</li>
+				<a href="#myModal"><li>GALLERY</li>
+				<a href="#contact"><li>RESERVATIONS</li>
+			</ul>
+		</div>
+	</div>
+    <h2 style="text-align:center">One page Website Lightbox</h2>
+    
+    <div id="home"></div>
+    <div class="row">
+      <div class="column">
+        <img src="./Images/thumb_1.jpg" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_2.jpg" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_3.jpg" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_4.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_5.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_6.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_7.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./Images/thumb_8.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="./Images/thumb_1wide.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="./Images/thumb_2wide.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="./Images/thumb_3wide.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="./Images/thumb_4wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="./Images/thumb_5wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="./Images/thumb_6wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="./Images/thumb_7wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="./Images/thumb_8wide.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_1wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Moving on up">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_2wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mercedes">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_3wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Love this car">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_4wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="another nice car">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_5wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="I love the dirt">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_6wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="I love the dirt">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_7wide.jpg" style="width:100%" onclick="currentSlide(7)" alt="I love the dirt">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./Images/thumb_8wide.jpg" style="width:100%" onclick="currentSlide(8)" alt="I love the dirt">
+        </div>
+      </div>
+    </div>
+    <section>
+		<div id="contact">
+			<div>
+				<h1>Reservations</h1>
+				<div>
+					<h2><span>This is what drives you!</span>
+						<br />Reserve your ride!
+					</h2>
+					<p>
+						Please provide your contact info.
+					</p>
+					<div>
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="First Name">
+							<input class="rsvp" type="text" value="Last Name">
+							<input class="rsvp" type="text" value="Email Address">
+							<input class="rsvp" type="text" value="Phone Number">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div>
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End RSVP -->
+	
+	<!-- Footer -->
+	<div>
+		www.thecarman.cars &nbsp;|&nbsp; &copy; 2023
+	</div>
+    <script src="./JS/OPWLightbox.js"></script>
+    </body>
+    </html>
